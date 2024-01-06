@@ -6,7 +6,9 @@
 
     <groupId>io.github.coffee330501</groupId>
     <artifactId>easy-mock</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
+
+    <description>java mock</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
