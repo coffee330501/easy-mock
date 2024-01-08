@@ -7,7 +7,7 @@
     <groupId>io.github.coffee330501</groupId>
     <artifactId>easy-mock</artifactId>
     <version>1.0.1</version>
-
+    <name>easy-mock</name>
     <description>java mock</description>
 
     <properties>
