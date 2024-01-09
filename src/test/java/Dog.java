@@ -1,5 +1,5 @@
-import io.github.coffee330501.Mock;
-import io.github.coffee330501.MockStrategies;
+import io.github.coffee330501.easyMock.Mock;
+import io.github.coffee330501.easyMock.MockStrategies;
 
 public class Dog implements DogService {
     private int age;

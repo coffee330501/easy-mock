@@ -1,4 +1,4 @@
-import io.github.coffee330501.MockStrategy;
+import io.github.coffee330501.easyMock.MockStrategy;
 
 public class MockStrategiesExtend {
     public static final String MY_STRING = "MY_STRING";

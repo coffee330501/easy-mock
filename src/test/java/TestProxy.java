@@ -1,5 +1,5 @@
-import io.github.coffee330501.Mock;
-import io.github.coffee330501.MockManager;
+import io.github.coffee330501.easyMock.Mock;
+import io.github.coffee330501.easyMock.MockManager;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -13,6 +13,8 @@ public class TestProxy implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        if (!MockManager.isGlobalUseMock()) return method.invoke(target, args);
+
         Class<?> clazz = target.getClass();
         Mock mockAnno = clazz.getMethod(method.getName()).getAnnotation(Mock.class);
         if (mockAnno == null) return method.invoke(target, args);

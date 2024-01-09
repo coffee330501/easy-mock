@@ -1,4 +1,4 @@
-package io.github.coffee330501;
+package io.github.coffee330501.easyMock;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,6 +8,7 @@ public class MockManager {
     private static final Map<String, MockStrategy<?>> processorMap = new HashMap<>();
 
     static {
+        registerMockProcessor(MockStrategies.LONG, MockStrategies.LONG_MOCK);
         registerMockProcessor(MockStrategies.STRING, MockStrategies.STRING_MOCK);
         registerMockProcessor(MockStrategies.INTEGER, MockStrategies.INTEGER_MOCK);
     }
@@ -25,10 +26,14 @@ public class MockManager {
     }
 
     public static void turnOnMock() {
-        MockManager.USE_MOCK = true;
+        USE_MOCK = true;
     }
 
     public static void turnOffMock() {
-        MockManager.USE_MOCK = false;
+        USE_MOCK = false;
+    }
+
+    public static boolean isGlobalUseMock(){
+        return USE_MOCK;
     }
 }

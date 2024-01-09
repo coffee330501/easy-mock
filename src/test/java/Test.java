@@ -1,4 +1,4 @@
-import io.github.coffee330501.MockManager;
+import io.github.coffee330501.easyMock.MockManager;
 
 import java.lang.reflect.Proxy;
 

@@ -1,4 +1,4 @@
-package io.github.coffee330501;
+package io.github.coffee330501.easyMock;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
