@@ -11,6 +11,7 @@ public class MockManager {
         registerMockProcessor(MockStrategies.LONG, MockStrategies.LONG_MOCK);
         registerMockProcessor(MockStrategies.STRING, MockStrategies.STRING_MOCK);
         registerMockProcessor(MockStrategies.INTEGER, MockStrategies.INTEGER_MOCK);
+        registerMockProcessor(MockStrategies.BIG_DECIMAL, MockStrategies.BIG_DECIMAL_MOCK);
     }
 
     public static void registerMockProcessor(String type, MockStrategy<?> processor) {

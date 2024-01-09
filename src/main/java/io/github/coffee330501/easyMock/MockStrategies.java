@@ -9,6 +9,7 @@ public class MockStrategies {
     public static final String LONG = "java.lang.Long";
     public static final String STRING = "java.lang.String";
     public static final String INTEGER = "java.lang.Integer";
+    public static final String BIG_DECIMAL = "java.math.BigDecimal";
 
     static MockStrategy<String> STRING_MOCK = param -> UUID.randomUUID().toString();
     static MockStrategy<Integer> INTEGER_MOCK = param -> ThreadLocalRandom.current().nextInt(0, 999999);
